@@ -1,0 +1,11 @@
+/coin-web/vendor
+/coin-web/node_modules
+/coin-web/.env
+/coin-web/public/storage
+/coin-web/storage/*.key
+.idea
+.vscode
+__pycache__
+*.pyc
+/coin-api/venv
+/coin-api/.env
