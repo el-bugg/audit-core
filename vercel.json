@@ -1,10 +1,11 @@
 {
-  "functions": {
-    "api/index.php": { "runtime": "vercel-php" },
-    "api/app.py": { "runtime": "@vercel/python" }
-  },
+  "version": 2,
+  "builds": [
+    { "src": "api/index.php", "use": "vercel-php@0.6.0" },
+    { "src": "api/app.py", "use": "@vercel/python" }
+  ],
   "routes": [
-    { "src": "/api/python/(.*)", "dest": "/api/app.py" },
-    { "src": "/(.*)", "dest": "/api/index.php" }
+    { "src": "/api/python/(.*)", "dest": "api/app.py" },
+    { "src": "/(.*)", "dest": "api/index.php" }
   ]
 }
