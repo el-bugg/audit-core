@@ -162,6 +162,7 @@
                 <a href="#how-it-works" class="block py-3 text-slate-700 font-medium border-b border-slate-100" onclick="toggleMobileMenu()" data-translate="nav_how">Process</a>
                 <a href="#reviews" class="block py-3 text-slate-700 font-medium border-b border-slate-100" onclick="toggleMobileMenu()" data-translate="nav_reviews">Reviews</a>
                 <a href="#contact" class="block py-3 text-slate-700 font-medium border-b border-slate-100" onclick="toggleMobileMenu()" data-translate="nav_contact">Contact</a>
+                <a href="#about" class="block py-3 text-slate-700 font-medium border-b border-slate-100" onclick="toggleMobileMenu()" data-translate="nav_team">Leadership</a>
                 
                 <div class="flex justify-between pt-2">
                     <button onclick="toggleLanguage()" class="text-primary font-bold text-sm flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-lg w-full justify-center">
