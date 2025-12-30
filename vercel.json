@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/index.php": { "runtime": "vercel-php@0.7.1" },
+    "api/app.py": { "runtime": "@vercel/python" }
+  },
+  "routes": [
+    { "src": "/api/python/(.*)", "dest": "/api/app.py" },
+    { "src": "/(.*)", "dest": "/api/index.php" }
+  ]
+}
