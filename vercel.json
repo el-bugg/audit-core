@@ -1,7 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/index.php", "use": "vercel-php@0.7.1" },
+    { 
+      "src": "api/index.php", 
+      "use": "vercel-php@0.7.1",
+      "config": { "command": "cd coin-web && composer install --no-dev" }
+    },
     { "src": "api/app.py", "use": "@vercel/python" }
   ],
   "routes": [
