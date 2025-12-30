@@ -4,7 +4,9 @@
     { 
       "src": "api/index.php", 
       "use": "vercel-php@0.7.1",
-      "config": { "command": "cd coin-web && composer install --no-dev" }
+      "config": { 
+        "command": "cd coin-web && composer install --no-dev --optimize-autoloader" 
+      }
     },
     { "src": "api/app.py", "use": "@vercel/python" }
   ],
