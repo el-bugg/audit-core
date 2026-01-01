@@ -1,4 +1,4 @@
-# /coin-web/vendor
+/coin-web/vendor
 /coin-web/node_modules
 /coin-web/.env
 /coin-web/public/storage
