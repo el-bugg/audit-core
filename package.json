@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "vercel-build": "cd coin-web && composer install --no-dev --optimize-autoloader"
-  }
-}
