@@ -1,8 +1,9 @@
 <?php
-// Cek beberapa kemungkinan lokasi vendor
-// Sesuaikan dengan struktur folder di VS Code Anda
-if (file_exists(__DIR__ . '/../coin-web/vendor/autoload.php')) {
+// Perbaikan logika path
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
     require __DIR__ . '/vendor/autoload.php';
+} elseif (file_exists(__DIR__ . '/../coin-web/vendor/autoload.php')) {
+    require __DIR__ . '/../coin-web/vendor/autoload.php';
 } else {
-    echo "Vendor autoload tidak ditemukan. Pastikan composer install sudah dijalankan.";
+    echo "Vendor autoload tidak ditemukan. Pastikan folder vendor sudah di-upload ke GitHub di dalam folder api atau coin-web.";
 }
