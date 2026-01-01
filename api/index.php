@@ -1,9 +1,7 @@
 <?php
-// Perbaikan logika path
+// Gunakan path ini karena vendor akan diinstal tepat di sebelah index.php
 if (file_exists(__DIR__ . '/vendor/autoload.php')) {
     require __DIR__ . '/vendor/autoload.php';
-} elseif (file_exists(__DIR__ . '/../coin-web/vendor/autoload.php')) {
-    require __DIR__ . '/../coin-web/vendor/autoload.php';
 } else {
-    echo "Vendor autoload tidak ditemukan. Pastikan folder vendor sudah di-upload ke GitHub di dalam folder api atau coin-web.";
+    echo "Vendor autoload tidak ditemukan di: " . __DIR__ . '/vendor/autoload.php';
 }
