@@ -3,9 +3,13 @@
   "builds": [
     { 
       "src": "api/index.php", 
-      "use": "vercel-php@0.7.1"
+      "use": "vercel-php@0.7.1",
+      "config": { "maxDuration": 10 }
     },
-    { "src": "api/app.py", "use": "@vercel/python" }
+    { 
+      "src": "api/app.py", 
+      "use": "@vercel/python" 
+    }
   ],
   "routes": [
     { "src": "/api/python/(.*)", "dest": "api/app.py" },
